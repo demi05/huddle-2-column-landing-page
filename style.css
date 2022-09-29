@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*, ::before, ::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body{
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Violet);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+h1, button{
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    max-width: 100%;
+}
+.container{
+    padding: 2em;
+    text-align: center;
+    color: #ffffff;
+}
+.logo-img-div{
+    text-align: left;
+    width: 40%;
+}
+.logo-img{
+    object-fit: cover;
+    width: 100%;
+    margin-bottom: 5em;
+}
+.img-side{
+    margin-bottom: 3em;
+    object-fit: cover;
+    width: 100%;
+}
+.text-side h1{
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.7rem;
+}
+.text-side p{
+    line-height: 1.4em;
+    /* letter-spacing: 1.15px; */
+}
+button{
+    margin-top: 2em;
+    margin-bottom: 5em;
+    background-color: #ffffff;
+    color: var(--Violet);
+    padding: 1em 6em;
+    border: none;
+    border-radius: 50px;
+    font-weight: 400;
+    box-shadow: 0 4px 20px -5px hsl(257, 40%, 18%);
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+}
+.social-icon{
+    text-align: center;
+}
+.fa-brands{
+    border: 1px solid white; 
+    border-radius: 50%; 
+    padding: 0.6em;  
+    margin-left: 0.5em;
+}
+.fa-brands:hover{
+    border: 1px solid var(--Soft-Magenta); 
+    color: var(--Soft-Magenta);
+}
+.attribution {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 2em;
+}
+.attribution a {
+  color: var(--Soft-Magenta);
+}
+.attribution a:active{
+    color: var(--Violet);
+}
+
+
+@media(min-width: 750px){
+    body{
+        background-image: url(images/bg-desktop.svg);
+    }
+    .logo-img-div{
+        width: 10%;
+    }
+    .container{
+        text-align: left;
+        padding: 3em 2em 2em 4em;
+    }
+    .main-side{
+        display: flex;
+        align-items: center;
+        /* border: 1px solid navajowhite; */
+    }
+    .img-side{
+        width: 100%;
+        margin-right: 3em;
+    }
+    .text-side{
+        margin-bottom: 9em;
+        /* border: 1px solid gold; */
+        /* align-self: flex-end; */
+    }
+    .text-side h1{
+        width: 60%;
+        line-height: 1.6em;
+        font-size: 2rem;
+    }
+    .text-side p{
+        width: 75%;
+        line-height: 1.5em;
+        font-size: 1.2rem;
+    }
+    .social-icon{
+        text-align: right;
+    }
+    .attribution{
+        text-align: left;
+        margin-top: 0;
+    }
+}
